@@ -17,7 +17,7 @@ var money = &cobra.Command{
 		var Apikey = viper.GetString(account + ".apikey")
 
 		request := Money.Money(Apikey)
-		fmt.Printf("%s 帳戶餘額: %f", account, request)
+		fmt.Printf("%s 帳戶餘額: %f \n", account, request)
 	},
 }
 
